@@ -1,0 +1,82 @@
+Family Activity Planner
+
+I will be creating a family planning app that will allow members to share events amongst fellow, invited members in the group. My app will be completed using React and Node. I plan on making this an evenly focused app, considering the user experience relies on the mainly on what is stored on the backend database. I would like for users to be able to access the app via website and mobile.  My goal is to allow members to view upcoming events for their designated group. This helps with privacy and inclusivity. Members will also be able to view vital information such as contact info on fellow group members. All users will remain private with only their names displaying when searched, unless they are members of the same group. The app will also allow members to host events, assign tasks to events, and even expenses pertaining to the cost of the event. Even though the app is designed for families, I would like to attract friend groups, teams, and even work-related groups that have to plan together. Data for the app will come from stored information added by users. So, I will construct my own schema so that data is properly stored and reusable. I will require authentication to help secure personal data including name, birthdate, email, and passwords. 
+
+User Functions
+
+•	Create user profile where user can add personal info(phone, email, birthday, location), they can also add photos for their profile picture, as  well as their wallpaper on their profile page, and album.(Profile Questionnaire after sign up, and accessible for edit via profile settings.)
+•	Users will be able to add events on Calendar(homepage) for other group members. Each event added by a user, they will be able to edit or remove. Only the host will be able to edit or remove events added from their account. 
+•	Users will be able to make comments on all events, date and timestamped with profile label(name and profile pic)
+•	Users will be able to view other user profiles within their invited group only.
+•	 Users will be able to sign up with google account, otherwise email and password. Once verified, user is directed to profile questionnaire page.
+•	Send messages to other users in group.
+
+
+
+Admin-User
+
+•	Creates Family group by inviting members to family name event calendar.(create event calendar form)
+•	Change the theme and back-round colors of homepage.
+•	Contains all other user functions listed.
+•	Remove users in group created.
+
+Homepage
+
+•	Landing page after login.
+•	Displays calendar of current month, with scroll down option to view past and future months.
+•	Ability to click on date and be redirected to page displaying event(s) scheduled on that day. With ability to comment on upcoming events.
+•	Displays a list of current members included in the group. With ability to click on members avatar and be redirected to their profile page.
+•	Display ”task to be completed” component(for logged- in user only), if any. If none, display, “No task today!”.
+•	Expense tracker component displaying upcoming payments and balances due for attending events per logged-in user. 
+Sign-up Page
+
+•	New user will be able to sign up using google account.
+•	New user will complete register form submitting first/last name, email, and password.
+•	Complete profile questionnaire.
+
+Search 
+
+•	Logged in users will be able to search other members via name.
+•	Keywords will reveal possible results relative to the users input with avatar pics and full name (link tags) of member being searched.
+•	Will look up all members registered to database, But not complete profile info unless a fellow member in group.
+
+Activities/Event Page
+
+•	Displays new event form for user to create a new event to add to the main calendar. Form will require event date, time, location, host, RSVP toggle switch to require rsvp, tasks (if any) and recipients, expenses (if any), and a brief explanation in detail of event.
+•	Navigation bar with new events, past events, and search events
+•	Admin view of events hosted by a user (meaning ability to see who has completed issued tasks and who has paid expenses or balances due for events)
+•	Host will be able to edit or remove upcoming events.
+•	Color coded events
+•	Link to address
+
+Comments
+
+•	Comments will only be made on events.
+•	Viewed in comment section under each event description.
+
+
+
+Expense Tracker
+
+•	Expenses should only be added to upcoming events
+•	Can be per individual or tracker for host of event for total cost.
+•	**Pay through portal and have balance reduced after each payment , with payment history option**
+•	Balances will be attached to corresponding users who will be attending
+•	If hosting, expense tracker will assist with itemizing and generating total cost each time a new item is added to the list. With ability to check off expense and reduce total cost each time.
+
+Task Handler
+
+•	Tasks can be issued by user hosting the event.
+•	Tasks can be refused or accepted by assigned user.
+•	Tasks will have “completed” checkbox or toggle.
+
+
+Theme
+
+•	Changeable on calendar with api library reference.
+•	Controlled by Admin user only.
+
+Alerts
+
+•	Each time a member adds, removes, or edits an event , other members are alerted via notification with sound.
+•	Ability to pause or silent notification, for long and short periods of time.
